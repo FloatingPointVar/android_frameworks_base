@@ -80,10 +80,10 @@ public class PAWorldActivity extends Activity {
         final TextView letter = new TextView(this);
 
         letter.setTypeface(bold);
-        letter.setTextSize(200);
+        letter.setTextSize(100);
         letter.setTextColor(TEXT_COLOR);
         letter.setGravity(Gravity.CENTER);
-        letter.setText("PA");
+        letter.setText("VENTURE");
 
         final int p = (int)(4 * metrics.density);
 
@@ -96,7 +96,7 @@ public class PAWorldActivity extends Activity {
         tv.setTransformationMethod(new AllCapsTransformationMethod(this));
         String paVersion = SystemProperties.get("ro.pa.version");
         paVersion = paVersion.replaceAll("([0-9\\.]+?)-.*", "$1");
-        tv.setText("Paranoid Android " + paVersion);
+        tv.setText("VentureROM " + paVersion);
         tv.setVisibility(View.INVISIBLE);
 
         mContent.addView(bg);
