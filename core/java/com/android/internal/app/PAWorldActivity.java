@@ -95,7 +95,7 @@ public class PAWorldActivity extends Activity {
         tv.setGravity(Gravity.CENTER);
         tv.setTransformationMethod(new AllCapsTransformationMethod(this));
         String ventureVersion = SystemProperties.get("ro.venture.version");
-        paVersion = paVersion.replaceAll("([0-9\\.]+?)-.*", "$1");
+        ventureVersion = ventureVersion.replaceAll("([0-9\\.]+?)-.*", "$1");
         tv.setText("VentureROM " + ventureVersion);
         tv.setVisibility(View.INVISIBLE);
 
