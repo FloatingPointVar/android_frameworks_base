@@ -79,8 +79,8 @@ public class PAWorldActivity extends Activity {
 
         final TextView letter = new TextView(this);
 
-        letter.setTypeface(bold);
-        letter.setTextSize(100);
+        letter.setTypeface(light);
+        letter.setTextSize(75);
         letter.setTextColor(TEXT_COLOR);
         letter.setGravity(Gravity.CENTER);
         letter.setText("VENTURE");
