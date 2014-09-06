@@ -94,9 +94,9 @@ public class PAWorldActivity extends Activity {
         tv.setTextColor(TEXT_COLOR);
         tv.setGravity(Gravity.CENTER);
         tv.setTransformationMethod(new AllCapsTransformationMethod(this));
-        String paVersion = SystemProperties.get("ro.pa.version");
+        String ventureVersion = SystemProperties.get("ro.venture.version");
         paVersion = paVersion.replaceAll("([0-9\\.]+?)-.*", "$1");
-        tv.setText("VentureROM " + paVersion);
+        tv.setText("VentureROM " + ventureVersion);
         tv.setVisibility(View.INVISIBLE);
 
         mContent.addView(bg);
